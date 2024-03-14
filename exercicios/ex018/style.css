@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+main {
+    margin: auto;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 3px 3px 40px #FF4858;
+    width: 600px;
+    height: 750px;
+}
+
+body {
+    background-image: linear-gradient(to right, #1B7F79, #00CCC0, #72F2EB, #747F7F);
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Acme", sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 5em;
+}
