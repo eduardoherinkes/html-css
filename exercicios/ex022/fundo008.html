@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralizando uma Div</title>
+    <style>
+        body {
+            background-color: darkslategray;;
+        }
+        .centralizada {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            border: 1px solid black;
+            padding: 20px 40px 20px 40px;
+            border-radius: 10px;
+            background-color: rgb(228, 151, 8);
+            color: white;
+        }
+        .centralizada:hover {
+            transition-duration: 0.5s;
+            color: rgb(228, 151, 8);
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="centralizada">
+        <p>Centralizada</p>
+    </div>
+</body>
+</html>

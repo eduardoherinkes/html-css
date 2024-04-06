@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento Vertical</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px black solid;
-            max-width: 200px;
+        #container {
+            position: relative;
+            padding: 10px;
+            height: 700px;
+            background-color: blueviolet;
+        }
+        #conteudo {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <div class="div1">
-        <p>Olá</p>
+    <div class="section" id="container">
+        <div class="artic" id="conteudo">
+        </div>
     </div>
 </body>
 </html>
