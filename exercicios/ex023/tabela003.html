@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 03</title>
+    <style> 
+
+        
+        table {
+            border-collapse: collapse;
+            color: blue;
+        }
+
+        caption {
+            background-color: rgb(238, 75, 75);
+        }
+
+        th {
+            padding: 10px;
+            border: 1px solid black;
+            background-color: pink;
+        }
+
+        td {
+            width: 200px;
+            background-color: black;
+            color: aqua;
+            padding: 12px;
+            color: brown;
+            border: 1px solid rgb(107, 24, 24);
+        }
+
+        td:hover {
+            background-color: blue;
+        }
+        
+        caption {
+            border: 1px solid black;
+            color: aquamarine;
+            padding: 10px;
+        }
+
+        .number {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <caption>Funcionarios Bradesco</caption>
+            <tr>
+                <th scope="col">Funcionario</th>
+                <th scope="col">CPF</th>
+                <th scope="col">Salário</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Maria Eduarda Garcia</td>
+                <td class="number
+                ">530.243.288-90</td>
+                <td class="number
+                ">R$19.100,57</td>
+            </tr>
+            <tr>
+                <td>Paulo Sérgio</td> 
+                <td class="number
+                ">654.983.432-76</td>
+                <td class="number
+                ">R$4.678,00</td>
+            <tr>
+                <td>Eduardo Henrique</td>
+                <td class="number
+                ">654.983.432-76</td>
+                <td class="number
+                ">R$4.678,00</td>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
