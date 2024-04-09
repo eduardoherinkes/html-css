@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            border-bottom: none;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.5em;
+            border: 1px solid black;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 700px;
+            height: 50%;
+        }
+        
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .vermelho {
+            background-color: rgb(250, 116, 116)
+        }
+
+        .azul {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="vermelho">
+            <col class="azul" span="3">
+            <col class="vermelho">
+            <col class="azul">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>Feminino</td>
+            <td>25 Anos de idade</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>Masculino</td>
+            <td>28 Anos de idade</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Jurema</td>
+            <td>Feminino</td>
+            <td>54 Anos de idade</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Paulo Sérgio</td>
+            <td>Masculino</td>
+            <td>90 Anos de idade</td>
+            <td>Bancario</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-collapse: collapse;
+            width: 50%;
+            height: 50%;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .head {
+            background-color: rgb(102, 102, 102);
+            color: white;
+        }
+
+        .resultado {
+            background-color: lightgreen;
+        }
+        
+        caption {
+            background-color: darkgray;
+            border: 1px solid black;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <caption>Boletim Eduardo Henrique Herinkes Soares</caption>
+            <tr>
+                <th rowspan="2" class="head" scope="row">Aréa</th>
+                <th rowspan="2" class="head" scope="rowgroup">Disciplinas</th>
+                <th colspan="2" class="head" scope="rowgroup">Notas</th>
+                <th rowspan="2" class="head" scope="rowgroup">Média</th>
+            </tr>
+            <tr>
+                <th class="head" scope="rowgroup">Nota 1</th>
+                <th class="head" scope="rowgroup">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="colgroup">Exatas</th>
+                <td>Matemática</td>
+                <td>7.5</td>
+                <td>6.2</td>
+                <td>6.85</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>9.0</td>
+                <td>10.0</td>
+                <td>9.5</td>
+            </tr>
+            <tr>
+                <td>Quimica</td>
+                <td>3.4</td>
+                <td>8.0</td>
+                <td>5.7</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>10.0</td>
+                <td>6.0</td>
+                <td>8.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="head" scope="col">Média de Exatas</th>
+                <td class="head">7.51</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="colgroup">Humanas</th>
+                <td>História</td>
+                <td>5.7</td>
+                <td>3.3</td>
+                <td>5.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>9.0</td>
+                <td>7.0</td>
+                <td>8.0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" class="head" scope="col">Média de Humanas</th>
+                <td class="head">6.5</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="col">Resultado Final</th>
+                <td class="resultado">Aprovado</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
